@@ -11,45 +11,46 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <!-- Main navigation block -->
-      <div class="container">
-        <nav>
+      <div class="header container">
+        <nav class="navigation">
           <!--Logo links in the header-->
-          <a href="./">
-            <p class="logo-portfolio">
-              <span class="logo-blue">Web</span
-              ><span class="logo-black">Studio</span>
+          <a class="navigation__link" href="./">
+            <p class="logo">
+              <span class="logo__text-blue">Web</span><span class="logo__text-black">Studio</span>
             </p>
           </a>
           <!--Navigation list links in header-->
-          <ul class="nav-block">
-            <li class="list"><a href="./">Студия</a></li>
-            <li class="list">
-              <div>
-                <a class="active-link" href="./portfolio.html">Портфолио</a>
-              </div>
+
+          <ul class="menu">
+            <li class="menu__list">
+              <div class="menu__list"><a class="menu__link" href="./">Студия</a></div>
             </li>
-            <li class="list"><a href="">Контакты</a></li>
+            <li class="menu__list">
+              <div class="menu__list-line"><a class="menu__link-active" href="./portfolio.html">Портфолио</a></div>
+            </li>
+            <li class="menu__list"><a class="menu__link" href="">Контакты</a></li>
           </ul>
         </nav>
         <!--Contacts links list in the header-->
-        <ul class="ul-contacts">
-          <li class="list-contacts">
-            <a href="mailto:info@devstudio.com"
-              ><svg class="icon-header" width="16" height="12">
+        <ul class="contacts">
+          <li class="contacts__list">
+            <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-hover"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="list-contacts">
-            <a href="tel:+380961111111"
-              ><svg class="icon-header" width="10" height="16">
+          <li class="contacts__list">
+            <a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -184,51 +185,50 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-section">
       <!--Logo links in the header-->
-      <!--Logo links in the header-->
-      <div class="container down-page">
-        <ul class="footer-ul">
-          <li class="footer-col">
+      <div class="container footer">
+        <ul class="footer__list">
+          <li class="footer__item">
             <a href="./">
-              <p class="logodown">
-                <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
+              <p class="logo-down">
+                <span class="logo-down__text-blue">Web</span><span class="logo-down__text-white">Studio</span>
               </p>
             </a>
-            <address class="adr">
-              <span>г. Киев, Бульвар Леси Украинки, 26</span> <br />
-              <a href="mailto:info@example.com"> info@example.com </a>
+            <address class="address">
+              <span class="address__text">г. Киев, Бульвар Леси Украинки, 26</span> <br />
+              <a class="address__link" href="mailto:info@example.com"> info@example.com </a>
               <br />
-              <a href="tel:++++++++79212285443"> +38 099 111 11 11 </a>
+              <a class="address__link" href="tel:+380991111111"> +38 099 111 11 11 </a>
             </address>
           </li>
           <li>
-            <p class="add">ПРИСОДЕНЯЙТЕСЬ</p>
-            <ul class="social-ul-down">
-              <li class="social-li-down">
-                <a href="">
-                  <svg class="social-link" width="20" height="20">
+            <p class="social-add">ПРИСОДЕНЯЙТЕСЬ</p>
+            <ul class="social-add__list">
+              <li class="social-add__item">
+                <a class="social-add__link" href="">
+                  <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-li-down">
-                <a href="">
-                  <svg class="social-link" width="20" height="20">
+              <li class="social-add__item">
+                <a class="social-add__link" href="">
+                  <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-li-down">
-                <a href="">
-                  <svg class="social-link" width="20" height="20">
+              <li class="social-add__item">
+                <a class="social-add__link" href="">
+                  <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-li-down">
-                <a href="">
-                  <svg class="social-link" width="20" height="20">
+              <li class="social-add__item">
+                <a class="social-add__link" href="">
+                  <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -236,13 +236,13 @@
             </ul>
           </li>
           <li>
-            <div class="subscribe-div">
-              <label class="subscribe-label" for="sum-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
-              <input class="subscribe-input" type="email" name="r-email" id="sub-mail" placeholder="E-mail" />
-      
+            <div class="subs">
+              <label class="subs__label" for="sum-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+              <input class="subs__input" type="email" name="r-email" id="sub-mail" placeholder="E-mail" />
+    
             </div>
           <li>
-            <button type="submit" class="subscribe-button" id="sub-mail">
+            <button type="submit" class="subs__button" id="sub-mail">
               <span>Подписаться </span>
               <svg class="icon-subs" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
