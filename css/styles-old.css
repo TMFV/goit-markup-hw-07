@@ -19,7 +19,7 @@
 .header {
   align-items: center;
 
-  background-color: var(--Logo-white-color);
+  background-color: $Logo-white-color;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -27,7 +27,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-main {
+.main {
   font-family: Roboto;
 }
 a {
@@ -45,7 +45,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 0;
 
-  color: var(--h2-text-color);
+  color: $h2-text-color;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -66,14 +66,6 @@ h2 {
   letter-spacing: 0.03em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-p.logo-portfolio {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-}
 .logo-down {
   margin: 0px 0px 20px 0px;
   font-family: Raleway;
@@ -84,20 +76,20 @@ p.logo-portfolio {
   letter-spacing: 0.03em;
 }
 .logo__text-blue {
-  color: var(--Logo-blue-color);
+  color: $Logo-blue-color;
 }
 .logo__text-black {
-  color: var(--Logo-black-color);
+  color: $Logo-black-color;
 }
 .logo__text-white {
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
 }
 
 .logo-down__text-blue {
-  color: var(--Logo-blue-color);
+  color: $Logo-blue-color;
 }
 .logo-down__text-white {
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
 }
 .navigation {
   display: flex;
@@ -116,7 +108,7 @@ p.logo-portfolio {
   align-items: center;
   max-height: 80px;
 
-  background-color: var(--Logo-white-color);
+  background-color: $Logo-white-color;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -126,14 +118,14 @@ p.logo-portfolio {
 }
 /* МЕНЮ НАВІГАЦІЇ*/
 .menu__link {
-  color: var(--h2-text-color);
+  color: $h2-text-color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__link:hover,
 .menu__link:focus {
-  color: var(--Logo-blue-color);
+  color: $Logo-blue-color;
 }
 .menu__list-line::after {
   content: "";
@@ -144,7 +136,7 @@ p.logo-portfolio {
   border-radius: 2px;
   bottom: -32px;
   left: 0px;
-  background-color: var(--Logo-blue-color);
+  background-color: $Logo-blue-color;
 }
 .menu {
   display: flex;
@@ -169,7 +161,7 @@ p.logo-portfolio {
 .contacts__link {
   display: flex;
   align-items: center;
-  color: var(--p-text-color);
+  color: $p-text-color;
   fill: #757575;
   transition-property: color fill;
   transition-duration: 250ms;
@@ -177,8 +169,8 @@ p.logo-portfolio {
 }
 .contacts__link:hover,
 .contacts__link:focus {
-  color: var(--Logo-blue-color);
-  fill: var(--Logo-blue-color);
+  color: $Logo-blue-color;
+  fill: $Logo-blue-color;
 }
 .contacts__icon {
   margin-right: 10px;
@@ -195,7 +187,7 @@ p.logo-portfolio {
 .hero-section {
   padding-top: 184px;
   padding-bottom: 184px;
-  background-color: var(--new-bg-hero);
+  background-color: $new-bg-hero;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -206,7 +198,7 @@ p.logo-portfolio {
   background-position: center;
 }
 .hero__title {
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -221,10 +213,10 @@ p.logo-portfolio {
   width: 200px;
   height: 50px;
   margin: 30px;
-  border: var(--Logo-blue-color);
+  border: $Logo-blue-color;
   border-radius: 4px;
-  background-color: var(--Logo-blue-color);
-  color: var(--Logo-white-color);
+  background-color: $Logo-blue-color;
+  color: $Logo-white-color;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -237,8 +229,8 @@ p.logo-portfolio {
 }
 .hero__button:hover,
 .hero__button:focus {
-  background-color: #188ce8;
-  color: var(--Logo-white-color);
+  background-color: $hover-button-background-color;
+  color: $Logo-white-color;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -264,7 +256,7 @@ p.logo-portfolio {
 .advantage__title {
   margin-top: 30px;
   margin-bottom: 10px;
-  color: var(--h2-text-color);
+  color: $h2-text-color;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -276,7 +268,7 @@ p.logo-portfolio {
   max-width: 270px;
   margin: 0;
 
-  color: var(--p-text-color);
+  color: $p-text-color;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -304,7 +296,7 @@ p.logo-portfolio {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--h2-text-color);
+  color: $h2-text-color;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -345,7 +337,7 @@ p.logo-portfolio {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
   background: rgba(47, 48, 58, 0.8);
   pointer-events: none;
 }
@@ -353,7 +345,7 @@ p.logo-portfolio {
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--our-team-background);
+  background-color: $our-team-background-color;
 }
 .team {
   flex-direction: column;
@@ -369,7 +361,7 @@ p.logo-portfolio {
 .team__title {
   margin-bottom: 50px;
   margin-top: 0;
-  color: var(--h2-text-color);
+  color: $h2-text-color;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -389,7 +381,7 @@ p.logo-portfolio {
   max-width: 270px;
   max-height: 428px;
 
-  background-color: var(--Logo-white-color);
+  background-color: $Logo-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -402,7 +394,7 @@ p.logo-portfolio {
   padding-top: 30px;
   margin-bottom: 10px;
   margin-top: 0px;
-  color: var(--h2-text-color);
+  color: $h2-text-color;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -415,7 +407,7 @@ p.logo-portfolio {
   padding-bottom: 16px;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: var(--p-text-color);
+  color: $p-text-color;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -438,16 +430,16 @@ p.logo-portfolio {
   border-style: solid;
   padding: 12px 12px 12px 12px;
   border-radius: 50%;
-  border-color: var(--Logo-white-color);
+  border-color: $Logo-white-color;
   transition-property: color fill border-color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list__link:hover,
 .social-list__link:focus {
-  fill: var(--Logo-white-color);
-  border-color: var(--Logo-blue-color);
-  background-color: var(--Logo-blue-color);
+  fill: $Logo-white-color;
+  border-color: $Logo-blue-color;
+  background-color: $Logo-blue-color;
 }
 .social-list {
   display: flex;
@@ -470,7 +462,7 @@ p.logo-portfolio {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--h2-text-color);
+  color: $h2-text-color;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -498,8 +490,8 @@ p.logo-portfolio {
 }
 .clients__link:hover,
 .client__link:focus {
-  fill: var(--Logo-blue-color);
-  border-color: var(--Logo-blue-color);
+  fill: $Logo-blue-color;
+  border-color: $Logo-blue-color;
 }
 .clients__list {
   display: inline-flex;
@@ -515,7 +507,7 @@ p.logo-portfolio {
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--footer-header-background);
+  background-color: $footer-header-background;
 }
 .footer {
   display: flex;
@@ -542,7 +534,7 @@ p.logo-portfolio {
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
 }
 .address__link {
   display: inline-block;
@@ -562,12 +554,12 @@ p.logo-portfolio {
   align-items: center;
   padding: 12px 12px 12px 12px;
 
-  fill: var(--Logo-white-color);
+  fill: $Logo-white-color;
   border-width: 1px;
   border-style: solid;
 
   border-radius: 50%;
-  border-color: var(--footer-header-background);
+  border-color: $footer-header-background;
   background-color: rgba(255, 255, 255, 0.1);
 
   transition-property: fill border-color background-color;
@@ -576,9 +568,9 @@ p.logo-portfolio {
 }
 .social-add__link:hover,
 .social-add__link:focus {
-  fill: var(--Logo-white-color);
-  border-color: var(--Logo-blue-color);
-  background-color: var(--Logo-blue-color);
+  fill: $Logo-white-color;
+  border-color: $Logo-blue-color;
+  background-color: $Logo-blue-color;
 }
 .social-add__list li:not(:last-child) {
   margin-right: 10px;
@@ -596,7 +588,7 @@ p.logo-portfolio {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
 }
 .subs {
   margin-top: 8px;
@@ -608,7 +600,7 @@ p.logo-portfolio {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
 }
 .subs__input {
   width: 358px;
@@ -650,7 +642,7 @@ p.logo-portfolio {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--Logo-blue-color);
+  border-color: $Logo-blue-color;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -658,7 +650,7 @@ p.logo-portfolio {
   line-height: 30px;
   /* identical to box height, or 187% */
   letter-spacing: 0.06em;
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -666,13 +658,13 @@ p.logo-portfolio {
 }
 .subs__button:hover,
 .subs__button:focus {
-  background-color: #188ce8;
+  background-color: $hover-button-background-color;
 }
 .subs__icon {
   margin-left: 10px;
 }
 .menu__link-active {
-  color: var(--Logo-blue-color);
+  color: $Logo-blue-color;
 }
 
 /* PORTFOLIO - PAGE Styles*/
@@ -697,8 +689,8 @@ p.logo-portfolio {
 }
 .portfolio-menu__button {
   padding: 6px 22px 6px 22px;
-  color: var(--h2-text-color);
-  background-color: var(--our-team-background);
+  color: $h2-text-color;
+  background-color: $our-team-background-color;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -714,15 +706,15 @@ p.logo-portfolio {
 }
 .portfolio-menu__button:hover,
 .portfolio-menu__button:focus {
-  color: var(--Logo-white-color);
-  background-color: var(--Logo-blue-color);
+  color: $Logo-white-color;
+  background-color: $Logo-blue-color;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  border-color: var(--Logo-white-color);
+  border-color: $Logo-white-color;
   box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.5); /* Параметры тени */
 }
 .portfolio-menu {
@@ -764,7 +756,7 @@ p.logo-portfolio {
   margin-right: 30px;
 }
 .project__title {
-  color: var(--h2-text-color);
+  color: $h2-text-color;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -772,7 +764,7 @@ p.logo-portfolio {
   letter-spacing: 0.06em;
 }
 .project__text {
-  color: var(--p-text-color);
+  color: $p-text-color;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -814,7 +806,7 @@ p.logo-portfolio {
   line-height: 1.56;
   /* or 156% */
   letter-spacing: 0.03em;
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
   overflow: hidden;
   transform: translateY(316px);
   transition-property: transform;
@@ -827,7 +819,7 @@ p.logo-portfolio {
   transform: translateY(15px);
 }
 .portfolio__list::backdrop {
-  background-color: var(--p-text-color);
+  background-color: $p-text-color;
 }
 
 /* ОФОРМЛЕННЯ ГРАФІКИ*/
@@ -851,7 +843,7 @@ p.logo-portfolio {
   padding-left: 40px;
   padding-right: 40px;
 
-  background-color: var(--Logo-white-color);
+  background-color: $Logo-white-color;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -878,7 +870,7 @@ p.logo-portfolio {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--h2-text-color);
+  color: $h2-text-color;
 }
 .modal__element {
   position: relative;
@@ -944,13 +936,13 @@ textarea {
 .modal__element:focus-within > .modal__icon
 /*.form-div:focus-within > .form-input,
 .form-div:focus-within > .form-label*/ {
-  fill: var(--Logo-blue-color);
-  color: var(--Logo-blue-color);
-  border-color: var(--Logo-blue-color);
+  fill: $Logo-blue-color;
+  color: $Logo-blue-color;
+  border-color: $Logo-blue-color;
 }
 /*
 .form-div:focus-within > .form-label {
-  color: var(--Logo-blue-color);
+  color: $Logo-blue-color;
 }
 */
 .modal__input:focus {
@@ -983,8 +975,8 @@ textarea {
   transform: translateY(2px);
 }
 .modal__checkbox:checked + .modal__apply-border {
-  border-color: var(--Logo-blue-color);
-  background-color: var(--Logo-blue-color);
+  border-color: $Logo-blue-color;
+  background-color: $Logo-blue-color;
   background-image: url("../images/form-icons/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
@@ -993,8 +985,8 @@ textarea {
   width: 200px;
   height: 50px;
   margin-top: 40px;
-  background: var(--Logo-blue-color);
-  border-color: var(--Logo-blue-color);
+  background: $Logo-blue-color;
+  border-color: $Logo-blue-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -1005,13 +997,13 @@ textarea {
   line-height: 1.87;
 
   letter-spacing: 0.06em;
-  color: var(--Logo-white-color);
+  color: $Logo-white-color;
   transition-property: background-color;
   transition-duration: 250ms;
 }
 .modal__button-submit:hover,
 .modal__button-submit:focus {
-  background-color: #188ce8;
+  background-color: $hover-button-background-color;
 }
 
 .close {
@@ -1024,12 +1016,12 @@ textarea {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--Logo-white-color);
+  background-color: $Logo-white-color;
   transform: translateX(228px) translateY(-542px);
   transition-property: fill;
   transition-duration: 250ms;
 }
 .close__button:hover,
 .close__button:focus {
-  fill: var(--Logo-blue-color);
+  fill: $Logo-blue-color;
 }
