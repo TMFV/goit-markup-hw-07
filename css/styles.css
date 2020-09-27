@@ -533,18 +533,13 @@ p.logo-portfolio {
 
 .address {
   width: 231px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
 }
 
 .address__text {
   margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--Logo-white-color);
@@ -554,7 +549,7 @@ p.logo-portfolio {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
@@ -673,11 +668,34 @@ p.logo-portfolio {
 .subs__button:focus {
   background-color: #188ce8;
 }
-
+.subs__icon {
+  margin-left: 10px;
+}
 .menu__link-active {
   color: var(--Logo-blue-color);
 }
-button.filter {
+
+/* PORTFOLIO - PAGE Styles*/
+/* PORTFOLIO - PAGE Styles*/
+/* PORTFOLIO - PAGE Styles*/
+
+.no-display {
+  display: none;
+}
+.zero {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.portfolio-menu__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 87px;
+  margin-bottom: 50px;
+}
+.portfolio-menu__list .portfolio-menu__item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-menu__button {
   padding: 6px 22px 6px 22px;
   color: var(--h2-text-color);
   background-color: var(--our-team-background);
@@ -694,8 +712,8 @@ button.filter {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-button.filter:hover,
-button.active:focus {
+.portfolio-menu__button:hover,
+.portfolio-menu__button:focus {
   color: var(--Logo-white-color);
   background-color: var(--Logo-blue-color);
   font-style: normal;
@@ -707,58 +725,24 @@ button.active:focus {
   border-color: var(--Logo-white-color);
   box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.5); /* Параметры тени */
 }
-h2.img-head {
-  color: var(--h2-text-color);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-}
-p.img-p {
-  color: var(--p-text-color);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-}
-/* PORTFOLIO - PAGE Styles*/
-/* PORTFOLIO - PAGE Styles*/
-/* PORTFOLIO - PAGE Styles*/
-
-.no-display {
-  display: none;
-}
-.zero {
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-.search-menu {
-  display: flex;
-  justify-content: center;
-  margin-top: 87px;
-  margin-bottom: 50px;
-}
-.search-menu > li:not(:last-child) {
-  margin-right: 8px;
-}
-.portfolio-section {
-  margin-top: 0px;
-  margin-bottom: 101px;
-}
-.portfolio-content {
+.portfolio-menu {
   flex-direction: column;
   justify-content: center;
 }
-.portfolio-projects {
+
+.portfolio {
+  margin-top: 0px;
+  margin-bottom: 101px;
+}
+
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.portfolio-projects > li {
+.portfolio__list .portfolio__item {
   box-sizing: border-box;
   max-width: 370px;
   max-height: 404px;
@@ -768,44 +752,52 @@ p.img-p {
   border-width: 1px;
   border-color: #eeeeee;
 }
-.portfolio-projects > li:hover,
-.portfolio-projects > li:focus {
+.portfolio__list .portfolio__item:hover,
+.portfolio__list .portfolio__item {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-projects > li:not(:nth-last-child(-n + 3)) {
+.portfolio__list .portfolio__item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.portfolio-projects > li:not(:nth-child(3n + 0)) {
+.portfolio__list .portfolio__item:not(:nth-child(3n + 0)) {
   margin-right: 30px;
 }
-.portfolio-projects > li > a > h2 {
+.project__title {
+  color: var(--h2-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.project__text {
+  color: var(--p-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+.project__title {
   box-sizing: border-box;
   margin-left: 24px;
   margin-bottom: 4px;
   padding-top: 20px;
 }
-.portfolio-projects > li > a > p {
+.project__text {
   box-sizing: border-box;
   margin-left: 24px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 20px;
 }
-/* ОФОРМЛЕННЯ ГРАФІКИ*/
-/* ОФОРМЛЕННЯ ГРАФІКИ*/
-/* ОФОРМЛЕННЯ ГРАФІКИ*/
-
-.pr-div {
-  width: 100%;
-  height: 100%;
-}
 /* Портфолио переход для проекта*/
-.project-im {
+.project {
   position: relative;
   overflow: hidden;
 }
-.project-text {
+.project__description {
   position: absolute;
   opacity: 1;
   /*0*/
@@ -830,13 +822,23 @@ p.img-p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-li:hover .project-text,
-.project-li:focus .project-text {
+.portfolio__item:hover .project__description,
+.portfolio__item:focus .project__description {
   transform: translateY(15px);
 }
-section > div > ul::backdrop {
+.portfolio__list::backdrop {
   background-color: var(--p-text-color);
 }
+
+/* ОФОРМЛЕННЯ ГРАФІКИ*/
+/* ОФОРМЛЕННЯ ГРАФІКИ*/
+/* ОФОРМЛЕННЯ ГРАФІКИ*/
+
+.pr-div {
+  width: 100%;
+  height: 100%;
+}
+
 .is-hidden {
   display: none;
 }
@@ -861,11 +863,11 @@ section > div > ul::backdrop {
   left: 0;
   margin: auto;
 }
-form {
+.form-section {
   padding: 0%;
   margin: 0%;
 }
-form > div > h2 {
+.modal__title {
   margin-top: 40px;
 
   font-family: Roboto;
@@ -878,16 +880,17 @@ form > div > h2 {
 
   color: var(--h2-text-color);
 }
-.form-div {
+.modal__element {
   position: relative;
   display: flex;
   flex-direction: column;
 }
+/*обнуление*/
 input,
 textarea {
   outline: none;
 }
-.form-input {
+.modal__input {
   display: flex;
   align-items: center;
   margin-top: 28px;
@@ -899,17 +902,16 @@ textarea {
   transition-property: border;
   transition-duration: 250ms;
 }
-textarea {
-  margin: 0%;
-}
-.form-com {
+
+.modal__textarea {
   resize: none;
   height: 120px;
   padding-left: 10px;
   padding-top: 5px;
+  margin: 28px 0px 0px 0px;
 }
 
-.form-label {
+.modal__label {
   position: absolute;
   transform: translateX(0px) translateY(10px);
 
@@ -933,13 +935,13 @@ textarea {
 }
 */
 
-.form-icon {
+.modal__icon {
   position: absolute;
   transform: translateX(14px) translateY(350%);
   transition-property: fill;
   transition-duration: 250ms;
 }
-.form-div:focus-within > .form-icon
+.modal__element:focus-within > .modal__icon
 /*.form-div:focus-within > .form-input,
 .form-div:focus-within > .form-label*/ {
   fill: var(--Logo-blue-color);
@@ -951,10 +953,10 @@ textarea {
   color: var(--Logo-blue-color);
 }
 */
-.form-input:focus {
+.modal__input:focus {
   border: 1px solid #2196f3;
 }
-.apply > span {
+.modal__apply-display {
   display: inline-block;
   margin-top: 20px;
   font-family: Roboto;
@@ -966,31 +968,28 @@ textarea {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.apply a {
-}
-.checkbox {
+.modal__checkbox {
   padding-top: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
   position: absolute;
 }
-.icon-f {
+.modal__apply-border {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 4px;
   transform: translateY(2px);
 }
-.checkbox:checked + .icon-f {
+.modal__checkbox:checked + .modal__apply-border {
   border-color: var(--Logo-blue-color);
   background-color: var(--Logo-blue-color);
   background-image: url("../images/form-icons/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
 }
-.subm {
+.modal__button-submit {
   width: 200px;
   height: 50px;
   margin-top: 40px;
@@ -1010,15 +1009,15 @@ textarea {
   transition-property: background-color;
   transition-duration: 250ms;
 }
-.subm:hover,
-.subm:focus {
+.modal__button-submit:hover,
+.modal__button-submit:focus {
   background-color: #188ce8;
 }
 
-.close-f {
+.close {
   position: relative;
 }
-.xclose {
+.close__button {
   position: absolute;
   padding: 0%;
   width: 30px;
@@ -1030,11 +1029,7 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
 }
-.xclose:hover,
-.xclose:focus {
+.close__button:hover,
+.close__button:focus {
   fill: var(--Logo-blue-color);
-}
-
-.icon-subs {
-  margin-left: 10px;
 }
