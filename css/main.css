@@ -656,6 +656,9 @@ h2 {
   border-style: solid;
   border-width: 1px;
   border-color: #eeeeee;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__item:hover {
