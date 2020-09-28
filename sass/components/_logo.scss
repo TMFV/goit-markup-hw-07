@@ -6,29 +6,31 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.logo-down {
-  margin: 0px 0px 20px 0px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-}
-.logo__text-blue {
-  color: $Logo-blue-color;
-}
-.logo__text-black {
-  color: $Logo-black-color;
-}
-.logo__text-white {
-  color: $Logo-white-color;
-}
 
-.logo-down__text-blue {
-  color: $Logo-blue-color;
-}
-.logo-down__text-white {
-  color: $Logo-white-color;
+  &__text-blue {
+    color: $Logo-blue-color;
+  }
+  &__text-black {
+    color: $Logo-black-color;
+  }
+  &__text-white {
+    color: $Logo-white-color;
+  }
+
+  &-down {
+    margin: 0px 0px 20px 0px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+
+    &__text-blue {
+      color: $Logo-blue-color;
+    }
+    &__text-white {
+      color: $Logo-white-color;
+    }
+  }
 }
